@@ -1,1 +1,126 @@
-<p>this is me kapital</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>portfolio Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 50px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    
+    .photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo {
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My One-Page Website</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#photos">Photos</a>
+      <a href="#contact">Contact</a>
+      <a href="#hobby">hobby </a>
+      <a href="#future">future</a>    
+    </nav>
+  </header>
+<div style="background-color: aliceblue;">
+  <section id="home">
+    <h2>Welcome to My Portfolio</h2>
+    <p>Hello! I'm Kapital Gebrehiwet, a student at Mekelle University.</p>
+    <p>I am passionate about web development and eager to learn and grow in this field.</p>
+    <p>On this portfolio website, you'll find a collection of my projects and work.</p>
+    <p>Feel free to explore and get inspired by my designs and code!</p>
+    <p>If you have any questions or would like to collaborate, please don't hesitate to reach out.</p>
+    <a href="#portfolio" class="cta-button">View My Portfolio</a>
+    <p>Thank you for visiting!</p>
+  </section>
+</div>
+
+<div style="background-color: bisque; text-align: center;"
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hello! I'm Kapital Gebrehiwet, a student at Mekelle University. I have a strong passion for web development and enjoy creating engaging and intuitive user experiences. I am currently studying software engineering and constantly seeking opportunities to enhance my skills.</p>
+  <p>My journey in web development began during my early years of college, where I discovered my love for coding and designing websites. Since then, I have been honing my skills in HTML, CSS, JavaScript, and various web development frameworks.</p>
+  <p>I believe in the power of collaboration and enjoy working in teams to bring ideas to life. I am always eager to learn new technologies and stay up-to-date with the latest trends in the web development industry.</p>
+  <p>When I'm not coding, you can find me exploring nature, reading books, or engaging in community service projects. I am a firm believer in giving back and using technology for positive change.</p>
+  <p>I'm excited to continue my journey in web development and contribute to meaningful projects. Feel free to reach out if you have any questions or opportunities for collaboration!</p>
+</section>
+</div>
+<section id="photos">
+  <h2>My Photos</h2>
+  <div class="photo-grid">
+    <div class="photo">
+      <img src="photo1.jpg" alt="Photo 1">
+    </div>
+    <div class="photo">
+      <img src="photo2.jpg" alt="Photo 2">
+    </div>
+    <div class="photo">
+      <img src="photo3.jpg" alt="Photo 3">
+    </div>
+    <div class="photo">
+      <img src="photo4.jpg" alt="Photo 4">
+    </div>
+  </div>
+</section>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>This is the contact section.</p>
+  </section>
+
+  <section id="hobby"></section>
+
+  <section id="future"></section>
+  <script>
+    // Smooth scrolling when clicking on navigation links
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
